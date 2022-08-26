@@ -50,18 +50,18 @@ class Player:
     def setup_skins(self):
         
         skins_url = [
-            "Moon_Game/Old_Man/Back1.xcf",
-            "Moon_Game/Old_Man/Back2.xcf",
-            "Moon_Game/Old_Man/Back3.xcf",
-            "Moon_Game/Old_Man/Right1.xcf",
-            "Moon_Game/Old_Man/Right2.xcf",
-            "Moon_Game/Old_Man/Right3.xcf",
-            "Moon_Game/Old_Man/Front1.xcf",
-            "Moon_Game/Old_Man/Front2.xcf",
-            "Moon_Game/Old_Man/Front3.xcf",
-            "Moon_Game/Old_Man/Left1.xcf",
-            "Moon_Game/Old_Man/Left2.xcf",
-            "Moon_Game/Old_Man/Left3.xcf",
+            "Old_Man/Back1.xcf",
+            "Old_Man/Back2.xcf",
+            "Old_Man/Back3.xcf",
+            "Old_Man/Right1.xcf",
+            "Old_Man/Right2.xcf",
+            "Old_Man/Right3.xcf",
+            "Old_Man/Front1.xcf",
+            "Old_Man/Front2.xcf",
+            "Old_Man/Front3.xcf",
+            "Old_Man/Left1.xcf",
+            "Old_Man/Left2.xcf",
+            "Old_Man/Left3.xcf",
         ]
         self.img_skins = []
         for skin in skins_url:
@@ -295,7 +295,7 @@ class Glomp:
     
         self.state = 'sitting' #shooting
 
-        self.raw_skin = pygame.image.load('Moon_Game/Enemies/Glomp/glomp.xcf')
+        self.raw_skin = pygame.image.load('Enemies/Glomp/glomp.xcf')
         self.skin = pygame.transform.scale(self.raw_skin, (self.width, self.height)) 
 
         self.shot_interval = shot_interval
@@ -337,10 +337,10 @@ class Reaper:
 
         self.width, self.height = 56*size, 56*size
 
-        self.front_skin = pygame.transform.scale(pygame.image.load("Moon_Game/Enemies/Reaper/reaper_front.xcf"), (self.width, self.height))
-        self.right_skin = pygame.transform.scale(pygame.image.load("Moon_Game/Enemies/Reaper/reaper_right.xcf"), (self.width, self.height))
-        self.back_skin = pygame.transform.scale(pygame.image.load("Moon_Game/Enemies/Reaper/reaper_back.xcf"), (self.width, self.height))
-        self.left_skin = pygame.transform.scale(pygame.image.load("Moon_Game/Enemies/Reaper/reaper_left.xcf"), (self.width, self.height))
+        self.front_skin = pygame.transform.scale(pygame.image.load("Enemies/Reaper/reaper_front.xcf"), (self.width, self.height))
+        self.right_skin = pygame.transform.scale(pygame.image.load("Enemies/Reaper/reaper_right.xcf"), (self.width, self.height))
+        self.back_skin = pygame.transform.scale(pygame.image.load("Enemies/Reaper/reaper_back.xcf"), (self.width, self.height))
+        self.left_skin = pygame.transform.scale(pygame.image.load("Enemies/Reaper/reaper_left.xcf"), (self.width, self.height))
     
     def move(self, player_x, player_y):
         if self.state == "standing": pass

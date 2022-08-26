@@ -21,7 +21,7 @@ screen = pygame.display.set_mode(size)
 #----------SETTINGS----------#
 
 #---HUD---#
-font = "Moon_Game/Fonts/yoster.ttf"
+font = "Fonts/yoster.ttf"
 #---MAP---#
 
 num_chunks = 3
@@ -187,7 +187,7 @@ while 1:
         for bullet in bullets: 
             sprites.append(bullet)
 
-        for reaper in reapers: sprites.append(reaper)
+        #for reaper in reapers: sprites.append(reaper)
 
 
         draw_sprites(sprites, player)

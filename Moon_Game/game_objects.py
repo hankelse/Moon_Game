@@ -132,13 +132,13 @@ class Backdrop:
         self.screen_width, self.screen_height = screen_width, screen_height
         self.num_chunks, self.biome_size_range = num_chunks, biome_size_range
         self.screen_width, self.screen_height, self.surface_width, self.surface_height =  screen_width, screen_height, surface_width, surface_height
-        #self.backdrop_raw = pygame.image.load("Moon_Game/Backdrop/backdrop.xcf")
+        #self.backdrop_raw = pygame.image.load("Backdrop/backdrop.xcf")
         #self.backdrop = pygame.transform.scale(self.backdrop_raw, (screen_width, screen_height))
         
         self.biome_dict = {
-            "glomp_canyon_norm": "Moon_Game/Backdrop/glomp_canyon.xcf",
-            "glomp_canyon_start": "Moon_Game/Backdrop/glomp_canyon_start.xcf",
-            "glomp_canyon_end": "Moon_Game/Backdrop/glomp_canyon_end.xcf",
+            "glomp_canyon_norm": "Backdrop/glomp_canyon.xcf",
+            "glomp_canyon_start": "Backdrop/glomp_canyon_start.xcf",
+            "glomp_canyon_end": "Backdrop/glomp_canyon_end.xcf",
         }
         self.load_images()
 
